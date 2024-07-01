@@ -1,0 +1,172 @@
+body {
+  --white: rgb(255, 255, 255);
+  background-image: url(../../../Image/gameBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -50px;
+  background-color: rgb(27, 27, 27);
+  font-family: 'Freckle Face', cursive;
+  box-sizing: border-box;
+  height: 100%;
+  color: var(--white);
+  box-sizing: border-box;
+  
+}
+#gameBoard {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 100px auto;
+  cursor: pointer;
+}
+.home{
+  background-color: rgba(255, 255, 255, 0.27);
+  backdrop-filter: blur(20px);
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  display: none;
+  transition: width 2s ease-in;
+  transition: height 2s ease-in;
+  z-index: 99;
+}
+.play_btn{
+  background-color: rgb(30, 30, 30);
+  border-top: 7px ridge rgb(144, 0, 248);
+  border-left: 7px ridge rgb(144, 0, 248);
+  border-right: 7px ridge rgb(144, 0, 248);
+  border-bottom: 7px double rgb(47, 255, 238);
+  border-radius: 30px;
+  font-size: 25px;
+  border-radius: 30px;
+  transition: transform 1s ease;
+  position: absolute;
+  left: 42%;
+  top: 40%;
+  padding-top: 45px;
+  width: 150px;
+  height: 70px;
+  cursor: pointer;
+  z-index: 99;
+}
+.play_btn:hover{
+  transform: scale(1.2, 1.2);
+  
+}
+
+#player_score {
+  border-top: 7px ridge rgb(0, 255, 110);
+  border-bottom: 7px double rgb(47, 255, 238);
+  border-radius: 30px;
+  color: rgb(0, 255, 110);
+  width: 12%;
+  height: 230px;
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+#computer_score{
+  border-top: 7px ridge rgb(225, 255, 0);
+  border-bottom: 7px double rgb(47, 255, 238);
+  border-radius: 30px;
+  color: rgb(225, 255, 0);
+  width: 12%;
+  height: 230px;
+  position: absolute;
+  top: 360px;
+  right: 10px;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+#player{
+  border-top: 7px ridge rgb(0, 255, 110);
+  border-bottom: 7px double rgb(47, 255, 238);
+  border-radius: 30px;
+  color: rgb(0, 255, 110);
+  font-size: 30px;
+  margin: 100px 10px 0 90px;
+  width: 28%;
+  height: 250px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 5px;
+}
+#computer {
+  border-top: 6px ridge rgb(225, 255, 0);
+  border-bottom: 6px double rgb(47, 255, 238);
+  border-radius: 30px;
+  font-size: 30px;
+  color: rgb(225, 255, 0);
+  margin: 100px 0 0 75px;
+  width: 28%;
+  height:250px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 5px;
+}
+#result {
+  border-top: 6px ridge rgb(255, 0, 0);
+  border-bottom: 6px ridge rgb(47, 255, 238);
+  border-radius: 20px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 30px;
+  width: 300px;
+  height: 45px;
+  margin: 10px 0px 0px 340px;
+  position: absolute;
+  visibility: hidden;
+  color: white;
+}
+.vs{
+  font-size: 70px;
+  font-weight: 600;
+  margin: 190px 0 0 70px;
+  color: rgb(0, 100, 0);
+}
+#pick {
+  border-left: 6px ridge greenyellow;
+  border-right: 6px double rgb(47, 255, 238);
+  border-radius: 30px;
+  color: greenyellow;
+  width: 17%;
+  height: 500px;
+  margin: -390px 700px 0px -215px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+#bato img, #papel img, #gunting img{
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 60px 0 0 60px;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+#bato img:hover{
+  width: 70px;
+  height: 80px;
+}
+#papel img:hover{
+  width: 80px;
+  height: 80px;
+}
+#gunting img:hover{
+  width: 80px;
+  height: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+}
